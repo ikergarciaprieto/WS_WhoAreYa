@@ -100,6 +100,13 @@ let setupRows = function (game) {
         })
     }
 
+    function bindClose() {
+        document.getElementById("closedialog").onclick = function () {
+            document.body.removeChild(document.body.lastChild)
+            document.getElementById("mistery").classList.remove("hue-rotate-180", "blur")
+        }
+    }
+
 
     function setContent(guess) {
 
